@@ -1,8 +1,12 @@
+# Habilita o Mod-Rewrite usado para URLs amigaveis
+RewriteEngine On
 
-
+RewriteBase /
 
 #define o arquivo home.php como página principal
-DirectoryIndex index.php
+#DirectoryIndex index.php
 
-# Habilita o Mod-Rewrite ysado para URLs amigaveis
-RewriteEngine On
+RewriteCond %{THE_REQUEST} public/([^\s?]*) [NC]
+RewriteRule ^ %1 [L,NE,R=302]
+RewriteRule ^((?!public/).*)$ SatellaSoft/MiniFrameworkMVC/public/$1 [L,NC]
+
