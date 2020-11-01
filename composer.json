@@ -1,0 +1,10 @@
+{
+    "name": "lucasleopoldino/mini-framework-mvc-php",
+    "authors": [
+        {
+            "name": "Lucas L",
+            "email": "loderdakar@gmail.com"
+        }
+    ],
+    "require": {}
+}
