@@ -1,4 +1,6 @@
 <?php
+
+// usada pra debug
 function dd($params = [], $die = true)
 {
     echo '<pre>';

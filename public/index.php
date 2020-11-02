@@ -14,13 +14,14 @@ and open the template in the editor.
     <?php
     // usa o composer pra fazer o autoload
     require_once("../vendor/autoload.php");
+    require_once("../app/config/config.php");
     require_once("../app/functions/functions.php");
 
-    use app\controller\TesteController;
+
+
     (new \app\core\RouterCore());
 
-    $controler = new TesteController();
-    dd($controler->seta());
+    
 
     ?>
 </body>

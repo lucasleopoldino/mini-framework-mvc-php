@@ -1,8 +1,17 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// Rotas
 
+$this->get('/', function() {
+    echo 'HOME!!! :D';
+});
+
+$this->get('/home/', function() {
+    echo 'Estou na HOME!!! :D';
+});
+
+$this->get('/about/test', function() {
+    echo 'Estou na about test!!! :D';
+});
+
+$this->get('/categoria', 'MyController@method');
